@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script>
+        function penjumlahan() {
+            var harga = document.getElementById('harga').value;
+            var jumlah = document.getElementById('jumlah').value;
+            var hasil = harga * jumlah;
+
+            document.getElementById('total').value = hasil;
+
+
+            var harga1 = document.getElementById('harga1').value;
+            var jumlah1 = document.getElementById('jumlah1').value;
+            var hasil1 = harga1 * jumlah1;
+
+            document.getElementById('total1').value = hasil1;
+
+
+            var harga2 = document.getElementById('harga2').value;
+            var jumlah2 = document.getElementById('jumlah2').value;
+            var hasil2 = harga2 * jumlah2;
+
+            document.getElementById('total2').value = hasil2;
+
+
+            var subtotal = document.getElementById('subtotal').value = hasil + hasil1 + hasil2;
+
+            document.getElementById('grandtotal').value = subtotal;
+
+            function bayarBang() {
+
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="section-header text-center p-5">
+            <h2>Form Pembelian Barang</h2>
+            <br><br>
+            <a href="1.html">Tugas 1</a>
+            <a href="3.html">Tugas 3</a>
+        </div>
+        <table class="table">
+            <form action="">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Jenis Barang</th>
+                        <th scope="col">Nama Barang</th>
+                        <th scope="col">Harga Satuan</th>
+                        <th scope="col">Jumlah Beli</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 1 -->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            <select class="form-select" style="width: 10rem;" name="" id="status">
+                                <option>Kaos</option>
+                                <option>Celana</option>
+                                <option>Sepatu</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" name="" id="nama">
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="number" class="form-control" id="harga" onchange="penjumlahan()">
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" type="number" id="jumlah" onchange="penjumlahan()">
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="number" class="form-control" id="total" disabled>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- 2 -->
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>
+                            <select class="form-select" style="width: 10rem;" name="" id="status1">
+                                <option>Kaos</option>
+                                <option>Celana</option>
+                                <option>Sepatu</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" name="" id="nama1">
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="number" class="form-control" id="harga1" onchange="penjumlahan()">
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" type="number" id="jumlah1" onchange="penjumlahan()">
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="number" class="form-control" id="total1" disabled>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- 3 -->
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>
+                            <select class="form-select" style="width: 10rem;" name="" id="status2">
+                                <option>Kaos</option>
+                                <option>Celana</option>
+                                <option>Sepatu</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" name="" id="nama2">
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="number" class="form-control" id="harga2" onchange="penjumlahan()">
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" type="number" id="jumlah2" onchange="penjumlahan()">
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="number" class="form-control" id="total2" disabled>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="text-align: right;">
+                            Sub Total
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="text" class="form-control" id="subtotal" disabled>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="text-align: right;">
+                            Grand Total
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="text" class="form-control" name="" id="grandtotal" disabled>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="text-align: right;">
+                            Bayar
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">RP</span>
+                                </div>
+                                <input type="text" class="form-control" name="" id="bayar">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            <button type="reset" class="btn btn-primary">Batal</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" onclick="bayarBang()">Submit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>

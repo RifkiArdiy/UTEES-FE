@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.js"></script>
+    <div>
+        <center>
+            <div class="row w-75 mt-3" >
+                <h1>FORM VALIDATION</h1>
+                <br><br>
+                <a href="2.html">Tugas 2</a>
+                <a href="3.html">Tugas 3</a>
+            </div>
+        </center>
+        <div class="position-relative">
+            <form id="form" method="post">
+                <div class="input-group flex-nowrap mb-4">
+                </div>
+                <div class="form-group row d-flex">
+                    <div class="col-sm-6">
+                        <label for="namaDepan" class="form-label">First Name</label>
+                        <div class="col-sm-15">
+                            <input type="text" class="form-control" name="FirstName" id="namaDepan" placeholder="ASHRUL"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="namaBelakang" class="form-label">Last Name</label>
+                        <div class="col-sm-15">
+                            <input type="text" class="form-control" name="lastName" id="namaBelakang"
+                                placeholder="RIFKI" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group row d-flex mt-4">
+                    <div class="col-sm-6">
+                        <label for="email" class="col-form-label">Email</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="addon-wrapping">@</span>
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="username@gmail.com" name="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row d-flex mt-4">
+                    <div class="col-sm-6">
+                        <label for="namaDepan" class="form-label">Phone Number</label>
+                        <div>
+                            <input type="number" class="form-control" name="no" id="numberPhone" placeholder="+62"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="namaDepan" class="form-label">Date</label>
+                        <div class="col-sm-15">
+                            <input type="date" class="form-control" name="date" id="date" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row d-flex mt-4">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="col-sm-7 col-form-label">Select The Category :</label>
+                        <div class="form-check mt-1">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="VIP">
+                            <label class="form-check-label" for="exampleRadios1">
+                                VIP
+                            </label>
+                        </div>
+                        <div class="form-check mt-1">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="PREMIUM">
+                            <label class="form-check-label" for="exampleRadios2">
+                                PREMIUM
+                            </label>
+                        </div>
+                        <div class="form-check mt-1">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="BASIC">
+                            <label class="form-check-label" for="exampleRadios3">
+                                BASIC
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-4">
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message : " required></textarea>
+                </div>
+                <center>
+                    <input class="btn btn-primary mb-3 mt-3" type="submit" value="Showresult">
+                    <input class="btn btn-danger mb-3 mt-3" type="reset" value="Reset">
+                </center>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <div class="container border form-outline card-body col-12 col-lg-9 col-xl-7">
+            <div class="result text-center">
+                <!-- <h5 >firstName</h5>
+                <h5>lastName</h5>
+                <h5>email</h5>
+                <h5>number</h5>
+                <h5>date</h5>
+                <h5>category</h5>
+                <h5>massage</h5> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
